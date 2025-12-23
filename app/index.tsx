@@ -1,15 +1,12 @@
 import { Text, View } from "react-native";
-
-export default function Index() {
+import "./global.css";
+ 
+export default function App() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Hello word</Text>
+    <View className="flex-1 items-center justify-center bg-white">
+      <Text className="text-xl font-bold text-blue-500">
+        Hello world
+      </Text>
     </View>
   );
 }
