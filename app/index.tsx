@@ -1,12 +1,12 @@
-import { Text, View } from "react-native";
-import "./global.css";
- 
-export default function App() {
-  return (
-    <View className="flex-1 items-center justify-center bg-white">
-      <Text className="text-xl font-bold text-blue-500">
-        Hello world
-      </Text>
-    </View>
-  );
+import { Redirect } from 'expo-router';
+
+export default function Home() {
+  // const { isSignedIn } = useAuth()
+  const isSignedIn = false
+
+  if (isSignedIn) {
+    return <Redirect href={'/(root)/(tabs)/home'} />
+  }
+  
+  return <Redirect href="/(auth)/signUp" /> 
 }
