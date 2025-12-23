@@ -8,5 +8,5 @@ export default function Home() {
     return <Redirect href={'/(root)/(tabs)/home'} />
   }
   
-  return <Redirect href="/(auth)/signUp" /> 
+  return <Redirect href="/(auth)/singUp" /> 
 }
